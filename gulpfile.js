@@ -2,11 +2,10 @@
 "use strict";
 
 var gulp = require("gulp"),
-    rimraf = require("rimraf"),
     uglify = require("gulp-uglify");
 
 gulp.task("minify:js", function(){
-	return gulp.src('./src/persist.js')
+	return gulp.src('./src/Agility.CMS.API.js')
 				.pipe(uglify())
 				.pipe(gulp.dest('./dist'));
 });
